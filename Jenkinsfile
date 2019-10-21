@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-      stage('Lint Dockerfile') {
+      stage('Lint') {
         steps {
           sh 'hadolint Dockerfile'
+          sh 'flake8 api.py'
         }
       }
     }
