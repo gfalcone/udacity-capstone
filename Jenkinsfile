@@ -10,7 +10,7 @@ pipeline {
       stage('Build') {
       	steps {
       	  sh 'docker build -t udacity .'
-      	  sh 'docker tag 418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity:latest'
+      	  sh 'docker tag udacity:latest 418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity:latest'
       	  sh 'docker push 418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity:latest'
       	}
       }
