@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Lint Dockerfile') {
         steps {
-          sh 'tidy -q -e Dockerfile'
+          sh 'hadolint Dockerfile'
         }
       }
     }
