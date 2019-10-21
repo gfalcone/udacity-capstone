@@ -1,15 +1,10 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-
-  }
-  stages {
-    stage('Test') {
-      steps {
-        sh 'echo "Coconut"'
+    agent any
+    stages {
+      stage('Lint Dockerfile') {
+        steps {
+          sh 'tidy -q -e Dockerfile'
+        }
       }
     }
-  }
 }
