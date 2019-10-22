@@ -2,5 +2,49 @@
 	{
 		"ParameterKey": "EnvironmentName",
 		"ParameterValue": "UdacityProject"
+	},
+	{
+		"ParameterKey": "EKSARNRole",
+		"ParameterValue": "arn:aws:iam::418590747430:role/EKSRole"
+	},
+	{
+		"ParameterKey": "ClusterName",
+		"ParameterValue": "KubernetesCluster"
+	},
+	{
+		"ParameterKey": "NodeAutoScalingGroupDesiredCapacity",
+		"ParameterValue": "3"
+	},
+	{
+		"ParameterKey": "NodeAutoScalingGroupMinSize",
+		"ParameterValue": "1"
+	},
+	{
+		"ParameterKey": "NodeAutoScalingGroupMaxSize",
+		"ParameterValue": "4"
+	},
+	{
+		"ParameterKey": "NodeGroupName",
+		"ParameterValue": "workers-eks"
+	},	
+	{
+		"ParameterKey": "NodeAutoScalingGroupDesiredCapacity",
+		"ParameterValue": "3"
+	},
+	{
+		"ParameterKey": "NodeImageId",
+		"ParameterValue": "ami-05d586e6f773f6abf"
+	},
+	{
+		"ParameterKey": "NodeInstanceType",
+		"ParameterValue": "t2.small"
+	},
+	{
+		"ParameterKey": "KeyName",
+		"ParameterValue": "key-pair"
+	},
+	{
+		"ParameterKey": "NodeVolumeSize",
+		"ParameterValue": "20"
 	}
 ]
