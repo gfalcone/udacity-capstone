@@ -14,6 +14,10 @@ pipeline {
       	  sh 'docker push 418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity:latest'
       	}
       }
-      stage('')
+      stage('Rolling update') {
+        steps {
+          sh 'kubectl set image deployment/hello-world-api image=418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity'
+        }
+      }
     }
 }
