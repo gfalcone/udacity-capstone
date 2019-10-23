@@ -4,6 +4,8 @@ This projects contains the code and infrastructure code to deploy an Hello World
 
 In order to pass the capstone exam, there is a screenshot folder showing the linting step and the rolling deployment with Jenkins
 
+All the code is accessible here : 
+
 ## Infrastructure
 
 In order to deploy the application, we need to have a working infrastructure.
