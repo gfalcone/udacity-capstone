@@ -4,7 +4,7 @@ This projects contains the code and infrastructure code to deploy an Hello World
 
 In order to pass the capstone exam, there is a screenshot folder showing the linting step and the rolling deployment with Jenkins
 
-All the code is accessible here : 
+All the code is accessible here : https://github.com/gfalcone/udacity-capstone
 
 ## Infrastructure
 
