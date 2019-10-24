@@ -77,6 +77,18 @@ Then deploy application to Kubernetes:
 kubectl apply -f deploy.yaml
 ```
 
+This script contains :
+- A deployment that creates 3 pods with the Hello World container
+- A service of type LoadBalancer so that the API can be accessible from the Internet
+
+In order to do the rolling deployment, the CI does this :
+
+```bash
+kubectl set image deployment/hello-world-api image=418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity
+```
+
+This triggers automatically a rolling replacement of the running container (even if this one has not changed). 
+
 ## CI/CD
 
 The CI is done with Jenkins and does the following steps :
