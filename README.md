@@ -84,10 +84,12 @@ This script contains :
 In order to do the rolling deployment, the CI does this :
 
 ```bash
-kubectl set image deployment/hello-world-api image=418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity
+kubectl set image deployment/hello-world-api image=418590747430.dkr.ecr.us-west-2.amazonaws.com/udacity:latest
 ```
 
-This triggers automatically a rolling replacement of the running container (even if this one has not changed). 
+This triggers automatically a rolling replacement of the running container (even if this one has not changed).
+
+Basically it forces Kubernetes to set the new image
 
 ## CI/CD
 
